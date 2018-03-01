@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/turq_background"
+    tools:context="com.example.venet.loginregister.RegisterActivtiy">
+    <!-- icon -->
+    <ImageView
+        android:id="@+id/imIcon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        app:srcCompat="@drawable/fruit_icon" />
+
+    <!--email_box-->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_below="@+id/imIcon"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/dark_turq"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+    <!--password_box-->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/dark_turq"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <!--confirm_pass_box-->
+    <EditText
+        android:id="@+id/etConfirmPass"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/dark_turq"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+    <!--reg_button-->
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imIcon"
+        android:layout_alignStart="@+id/imIcon"
+        android:layout_below="@+id/etConfirmPass"
+        android:layout_marginTop="37dp"
+        android:text="Register" />
+    <!--email_icon-->
+    <ImageView
+        android:id="@+id/imEmail"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/etEmail"
+        android:layout_alignEnd="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignTop="@+id/etEmail"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+    <!--lock_icon-->
+    <ImageView
+        android:id="@+id/imLock"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/etPassword"
+        android:layout_alignEnd="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignTop="@+id/etPassword"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+    <!--lock_icon-->
+    <ImageView
+        android:id="@+id/imLock2"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/etConfirmPass"
+        android:layout_alignRight="@+id/etConfirmPass"
+        android:layout_alignTop="@+id/etConfirmPass"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+</RelativeLayout>
